@@ -180,6 +180,7 @@ body {
 .search-field {
   display: grid;
   gap: 4px;
+  width: 100%;
 }
 .search-field label {
   font-size: 12px;
@@ -189,12 +190,14 @@ body {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 10px 12px;
+  width: 100%;
 }
 .search-field select {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 10px 12px;
   background: white;
+  width: 100%;
 }
 .search-field.clickable { cursor: pointer; }
 .search-btn {
@@ -350,7 +353,9 @@ body {
 /* Responsive */
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .search-bar { grid-template-columns: 1fr; }
+  .search-bar {
+    grid-template-columns: 1fr;
+  }
   .search-btn { height: 50px; padding: 14px 16px; font-size: 16px; }
   .card { grid-template-columns: 1fr; }
   .price { justify-items: start; border-left: none; border-top: 1px dashed #e5e7eb; }
