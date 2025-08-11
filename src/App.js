@@ -471,7 +471,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        © {new Date().getFullYear()} Sunny Sprouts. All rights reserved.
+        © {new Date().getFullYear()} DayCareGlobal. All rights reserved.
       </div>
     </footer>
   );
