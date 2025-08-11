@@ -34,7 +34,7 @@ body {
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 100;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: saturate(180%) blur(10px);
   border-bottom: 1px solid #eef2f7;
@@ -111,6 +111,16 @@ body {
     gap: 8px;
     padding: 18px;
     z-index: 50;
+  }
+  .mobile-nav .close-btn {
+    justify-self: end;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    background: #fff;
+    cursor: pointer;
+    font-size: 18px;
   }
 }
 
@@ -341,6 +351,7 @@ body {
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; }
   .search-bar { grid-template-columns: 1fr; }
+  .search-btn { height: 50px; padding: 14px 16px; font-size: 16px; }
   .card { grid-template-columns: 1fr; }
   .price { justify-items: start; border-left: none; border-top: 1px dashed #e5e7eb; }
   .grid-3 { grid-template-columns: 1fr; }

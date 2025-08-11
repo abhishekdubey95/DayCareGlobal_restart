@@ -64,11 +64,25 @@ function Header() {
         <nav className="desktop-nav">
           <NavLinks />
         </nav>
-        <button className="menu-btn" aria-label="Toggle menu" onClick={() => setMenuOpen((v) => !v)}>☰</button>
+        <button
+          className="menu-btn"
+          aria-label="Toggle menu"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((v) => !v)}
+        >
+          ☰
+        </button>
         {menuOpen && (
           <>
             <div className="mobile-nav-overlay" onClick={() => setMenuOpen(false)} />
             <div className="mobile-nav">
+              <button
+                className="close-btn"
+                aria-label="Close menu"
+                onClick={() => setMenuOpen(false)}
+              >
+                ✕
+              </button>
               <NavLinks onClick={() => setMenuOpen(false)} />
             </div>
           </>
